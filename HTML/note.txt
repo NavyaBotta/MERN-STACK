@@ -237,7 +237,84 @@ input attributes:
   11.readonly
   12.style
   13.class
-Creating repository in GUTHUB
+button attributes:
+
+
+
+
+
+
+
+
+
+media tags:
+-----------
+   ->media tags are used to display audio,video or to embed google maps, youtube videos,documents, webpages etc
+
+   media tags like:
+      1.audio:
+           -><audio></audio> are used to display audios in web pages
+           
+           audio tags attributes:
+           ---------------------
+             1.src(source)
+             2.controls
+             3.muted
+             4.loop
+             5.autoplay
+     2.video:
+        -><video></video>are used to display videos in web Page
+
+    video tags attributes:
+    ---------------------
+            1.src(source)
+             2.controls
+             3.muted
+             4.loop
+             5.autoplay
+             6.height
+             7.width
+
+anchor tag:
+----------
+    -><a></a> :used to link external websites, webpages ,documents ,java script,alert messages etc...
+    -><a></a> tag content default color:blue
+    ->active <a></a> tag contennt-color:red            
+    ->visted <a></a> tag content color purple
+
+anchor tag attributes:
+---------------------
+    1.href: it will accept url or path as a value
+    2.target:it will decide the page will open in new tab or same tab based on the values[_blank,_self,_top,_parent]
+    3.download: 
+
+semantic tags:
+--------------
+    ->semantic tags are used to build proper structure of code/web page 
+    ->using semantic tags we can increase SEO(search  engine optimization) and also increases the code 
+
+
+    semantics tags:
+    ---------------
+    1.<header></header>
+    2.<footer></footer>
+    3.<nav></nav>
+    4.<main></main>
+    5.<section></section>
+    6.<figure></figure>
+    7.<details></details>
+    8.<aside></aside>
+    9.<article></article>
+    10.<strong></strong>
+    11.<em></em>
+svg tags:
+---------
+   ->
+
+
+
+
+    Creating repository in GUTHUB
 --------------------------------
 Step1: Create a new repository is GITHUB
 Step2: Open the project folder in command prompt

@@ -6,13 +6,13 @@
     <title>login form</title>
 </head>
 <body>
-    <form action="">
-        <fieldset>
+    <form action="" method="get">
+        <fieldset style="background-image:linear-gradient(pink,blue,yellow);border-radius:40px 50px; padding:50px;margin:50px">
             <legend align="center">login form</legend>
             <label for="username">username:</label>
-            <input type="text" id="username" placeholder="enter username"> <br> <br>
+            <input type="text" maxlength="10" minlength="4" id="username" placeholder="enter username"> <br> <br>
             <label for="psw">password:</label>
-        <input type="text" id="psw" placeholder="Enter password">
+        <input type="text" required="password" name="password" placeholder="Enter password">
         <br><br>
         <button type="submit">Login</button>
         <button type="reset">Cancel</button>
