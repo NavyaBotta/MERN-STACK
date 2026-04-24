@@ -33,9 +33,22 @@ types of css selectors:
       ->universal selectors(*)
       ->class selectors(.)
       ->tag selectorsctors 
- 2.combinator sele(#):
- -
- 3.pseduo selectors 
+ 2.combinator selector:
+      ->descendent selector(space)
+      ->child selector(>)
+      ->adjacent sibling selector(+)
+      ->general sibling selector(~)
+ 3.pseduo selectors :i.structure pseudo class selectors:
+    1. :first-child
+    2. :last_child
+    3. :first_of last_child4.
+    4. :last_of _type
+    5. :nth_child()
+ii.dynamic pseudo class selectors:
+    1.:active     ----
+    2. :visited   ----  ->anchor tags
+    3. :focus     ----  ->input tag
+    4. :
  4.pseudo  elements selectors
  5.attribute selectors 
    
