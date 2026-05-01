@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userDetails= function(userName,password){
+           // let username="ravi@123";
+           // let password="admin@123";
+            //console.log(username);     
+            //console.log(password);     
+            console.log("this is functional expression");
+            return userName+" "+password
+        }
+        let result=userDetails('ravi@123',"admin@123");
+        console.log(userDetails("ramu","ramu@123"));
+        console.log(result);
+
+
+        //normal function
+
+        function employeeDetails(name, role, salary, address){
+           // console.log("this is Normal function..");
+        
+
+                
+            
+              //console.log("Name:", name);
+              //console.log("Role:", role);
+             // console.log("Salary:", salary);
+              //console.log("Address:", address);
+              return[name,role,salary,address]
+
+
+            }
+            let emp1=employeeDetails("Navya","developer",90000,"Kochi");
+            console.log(emp1);
+            //immediate invoking function/self calling function
+            (function(){
+                let apikey="AIzaSyA3FkWSWXPzN77fnSaHsxpm568_t222n9g"
+                console.log("this is immediate invoking fnction");
+                return apikey;
+            })
+            ()
+            let a=10;
+            
+            //arrow function
+
+            let arrowFun=()=>console.log("Arrow function");
+            arrowFun()
+            arrowFun()
+            arrowFun()
+
+            let test=(skills,name) =>{
+                let a=10
+                let b=20
+                console.log(a,b);
+                console.log("Name :", name, "Skills: ", skills);
+
+
+            }
+
+            test(["node js", "express js", "mongoDb", "react js"],"vivek Ayan")
+
+            //nested functions
+            
+
+    //    function outerfun() {
+    //     function innerFun() {
+    //         console.log("inner function");
+    //     }
+    //     console.log(("outer function"));
+    //     innerFun()
+        
+    //    }
+    //   outerfun()
+            
+    function outerFun(count){
+         console.log("outer function")
+        return  function innerFun(){
+
+            return count++;
+           // console.log(a,b)
+           // console.log("inner function")
+        }
+       
+      }
+     let result1 = outerFun(1)
+     console.log(result1());
+     console.log(result1());
+     console.log(result1());
+     console.log(result1());
+
+
+     function homepage(){
+        console.log("Home page");
+
+     }
+     function loginpage(){
+        console.log("login page logic");
+
+     }
+     function registerpage(){
+        console.log("Register page logic");
+
+     }
+     homepage(registerpage(),loginpage())
+
+     function display(fun1, fun2){
+           fun1();
+           fun2();
+     }
+
+     display(()=> {
+        console.log("first callback function");
+     },   
+     ()=>{
+        console.log("second callback function");
+     })
+
+    
+              
+
+                
+            
+        
+    
+    </script>
+</body>
+</html>

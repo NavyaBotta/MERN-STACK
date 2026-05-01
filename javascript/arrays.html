@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //literal way
+        let Arr=[10,20,30,40,50,60]
+        let Arr1=['java',null,50,20.5,true];
+        console.table(Arr);
+        console.log(Arr1);
+
+        //new keyword
+        let Arr2=new Array(10,20,30,40)
+        console.table(Arr2);
+        console.log(Arr[3]);
+
+        //inbuilt methods/inbuilt functions
+        let sampleArr=[10,20,30]
+        console.log(sampleArr);
+        sampleArr.push(20)
+        console.log(sampleArr);
+        sampleArr.pop()
+        console.log(sampleArr);
+        sampleArr.unshift(40)
+        console.log(sampleArr);
+        sampleArr.unshift(40,50)
+        console.log(sampleArr);
+        sampleArr.shift()
+        console.log(sampleArr);
+
+
+        sampleArr.push(40,50,60)
+        console.log(sampleArr)
+        sampleArr.splice(1,0,"javascript");
+        console.log(sampleArr);
+
+        console.log(sampleArr.slice(0,4));
+        console.log(sampleArr.reverse());
+        console.log(sampleArr.toString());
+
+
+        //input:"javascript is scripting language"
+        //output1:"language scripting is javascript"
+        //output2:"egaugnal gnitpircs si tpircsavaj"
+        
+
+
+
+
+    </script>
+</body>
+</html>

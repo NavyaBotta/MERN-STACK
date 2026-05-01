@@ -1,0 +1,197 @@
+javascript:
+-----------
+   ->javascript is scripting language as well as programming language
+why we need JS:
+---------------
+  ->to build dynamic web applications
+  ->to add functionality to the web applications
+  ->to manipulate HTML and CSS
+  ->to chieve DOM(document object model) functionalities
+  ->to fetch data from server(API) and also to send data to server js is required
+
+     difference between java and javascript
+     --------------------------------------
+     java                                            javascript
+     ----------------------------------------        -----------------------------------
+     ->java object oriented programming language     ->JS is the scripting language as well as object based programming language
+     ->java will supports multi threading            ->it will support single call stack
+     ->is a imperative in nature                     ->is a dynamically typed(in js no need to define datatype to the variable)
+     ->it is a strictly typed                        ->weakly typed
+     
+
+     Tokens
+     -------
+      ->tokens are the smallest unites/elements in the js programs
+
+      classifications:
+      1.identifiers:
+         ->identifiers are the names given to js code
+         ex:variablescnames,class names,function names
+         ->in the place of identifiers we cant use keywords 
+
+      2.literals:
+        ->are the values given to the js code 
+        types:
+        1.string literals
+        2.numeric literals
+
+      3.keywords:
+        ->are the predefined words which having its meaning
+        ->in js total 66 keywords present
+        ex:int,char,function,float,boolean,class,const,var,let,if,else,for,else,while,do,continue,switch,break,default,double,return,export,exports,finally,try,catch,super,this,throw,package,public,void,null,import,get,set,abstract,aasert,byte,constant,enum,extends,delete,implements ...etc
+      4.seperators:
+        ->are used to seperate the given code
+        ex:[],{},(),;,:,",',``,,,,<>
+      5.operators:
+        ->are used to perform operations on operands
+        ex:10+20 
+        types:
+        1.aasignement operators(=,+=,-=,*=,/=,%=)
+        2.relational operators(>,>=,<,<=)
+        3.arthimetic operators(+,-,*,/,%,**)
+        4.bitwise operators(&,|,^)
+        5.unary operators(++,--)
+        6.logic operators(&,||,!)
+        7.ternary operators     (condition ? expr1 :expr2)
+        8.shift operators       (>> , <<)
+        9.ccomparision operators (== , === , !=)
+    6.comments
+        ->comments are used to comment the given code
+
+                 types:
+                       1.single line //
+                       2.multi line comment /*
+
+DataTypes in JS:
+---------------
+      ->DataTypes represents the what type of data we storing inn variables           
+                  1.Primitive DataTypes  (immutable)
+                       1.number
+                       2.string
+                       3.boolean
+                       4.null
+                       5.underline
+                       6.symbol
+                       7.bigInt
+                  2.Non-Primitive DataTypes (mutable, object de-referencing)        
+                       1.Arrays
+                       2.Class type
+                       3.objects
+                       4.function              
+
+variables
+---------
+     ->variables are the named memory location used to store data or values and it can change N number of times during execution
+
+       str="javascript"
+       str=10
+
+1.variable declaration
+2.variable initialization
+3.variable utilization
+4.variable re-initialization
+5.variable re-declaration
+
+in js we can define variable in 3 ways:
+--------------------------------------
+1.let
+->let variables act like an local scop/block scop
+->variable declaration and initialization in same/different line is possible
+->re-initialization is possible but re-declarationis not possible
+->we can't hoist the let variables
+
+2.var:
+   ->let variables acts like a global scop (because var present in windows object)
+   ->variable decleration and intialization in same /different line is possible
+   ->re-initialization and re-declarationis is possible
+->we can't hoist the var variables
+
+3.const
+
+
+strings:
+--------
+->strings are group of characters
+->we can declare string 3 ways
+""
+''
+`` ->template string and string interpolation
+
+string inbuilt functions:
+------------------------
+
+
+
+arrays:
+-------
+    ->Arrays are the linear data structures used to store homegenous or hetergenous types of data
+    ->Arrays size is not fixed
+  ways to decelare the array:
+  ---------------------------
+     1.literal ways
+     2.using new keyword(array object)
+
+     functions/methods:
+     -----------------
+     ->are the block of stsements which will get excute when ever we called or ivoke
+     ->using functions we increase code readibility and code reusebility
+
+     basically we have 2 types functions
+     1.user defined functions
+          ->any function that is declared by user or programmer as per there requirements
+    2.predefined functions
+          ->it means inbuilt functions
+
+    js functions types
+    ------------------
+        1.anonyms function:
+        
+        2.normal function/named function
+        3.functional expression
+        4.immediate invoking function/self calling function
+        5.arrow function
+        6.nested function
+        7.higher order function
+                   ->any functions that will be acept another parameter
+        8.callback function
+                   ->any functions passing as a value to the higher order function
+        9.generator function 
+
+
+        objects:
+        -------------
+            ->they are real time entities which are used to store data in the form ley and value pair
+
+      1.literal way
+      2.using keyword(create for object class)
+
+DOM(Document object model)
+------------------------------
+              ->DOM are used to manipulate HTML and CSS 
+              ->To build dynamic web pages
+
+
+BOM(Browser object model)
+--------------------------
+         ->is the predefined inbuilt object present in every Browser
+         ->it contains windows object
+
+
+we can apply events in three different ways:
+---------------------------------------------
+  1.attribute way()
+    ->onclick=""
+    ->onsubmit=""
+  2.property way
+  3.add event listeners
+        
+        
+
+
+
+
+
+hoisting:
+--------
+  ->utilizing the variables before declaration 
+  ->hoisting is possible in 'var' declaration
