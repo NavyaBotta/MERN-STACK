@@ -4,10 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        tbody tr:nth-child(odd){
+            background-color:blanchedalmond;
+        }
+        body{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+
+        }
+        input{
+            margin-botton:"40px";
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>Emp Details</h1>
-    table>thead
+    
+    <h1>EMP Details</h1>
+    <input type="search" placeholder="search employee">
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr bgcolor="orange">
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th>Address</th>
+            <th>phno</th>
+        </tr>
+        </thead>
+      <tbody>
+        <tr>
+            <td>Navya</td>
+            <td>dev</td>
+            <td>50000</td>
+            <td>vizag</td>
+            <td>3636363</td>
+        </tr>
+        <tr>
+            <td>xyz</td>
+            <td>lead</td>
+            <td>22222</td>
+            <td>vzm</td>
+            <td>3636336</td>
+        </tr>
+        <tr>
+            <td>yzx</td>
+            <td>test engineer</td>
+            <td>444666</td>
+            <td>vizag</td>
+            <td>474747</td>
+        </tr>
+      </tbody>
+    </table>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore odit laborum animi labore cum illo, nam at deserunt nesciunt, iure voluptate odio sint porro reprehenderit, perferendis autem explicabo quia nihil?</p>
+      <button onclick="disappearParagraph()">click here</button>
 
+      <script>
+        function disappearParagraph(){
+            let para = document.querySelector("p");
+            para.style.display=(para.style.display == "block") ? "none" : "block"
+        }
+        let rows=document.querySelectorAll("tbody tr");
+        rows[0].style
+        let input=document.querySelector("input");
+        input.addEventListener('keyup',()=>{
+            let inputText=input.value.toLocaleLowerCase()
+            rows.forEach((row)=>{
+           // console.log(row)
+           let rowData=row.textContent;
+
+           let result= rowData.toLowerCase().includes(inputText);
+           
+
+           row.style.display= result? "" : "none"
+       
+        })
+         
+       
+        })
+    input.addEventListener('keyup',()=>{   console.log(input.value);
+        let inputText=input.value
+         console.log(inputText);
+    })
+   
+      </script>
+    
 </body>
 </html>
