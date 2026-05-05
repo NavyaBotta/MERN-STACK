@@ -1,0 +1,125 @@
+React JS:
+----------
+   ->React JS is the smallest JS library
+
+   Features:
+   ----------
+        ->it supports virtual DOM
+        ->React js is component based
+        ->using React JS we can build (SPA) single page of application 
+        ->React JS will follow defining alogrithm
+
+library:
+---------
+    ->collection of code is called as library
+    ->Ex: react JS,jQuery,anime Js...etc
+
+Frame work:
+-----------
+   ->collection of libraries is called as Framework
+   eX:Angular JS, next JS, Express JS, ELectron JS, vue JS
+
+JSX(javascript and XML[extendable markup language]):
+------------------------------------------------------
+   ->React will understand JSX code but browser will not understand JSX it understands only JS code (because every browswer having JS engin's)
+   ->to convert JSX code to JS we have a next generation compiler called "babel JS"
+   ->JSX is similar to HTML here it allows both JS  and HTML code 
+
+Rules :
+-------
+   ->JSX filenames is always starts with capital letters
+   ->here we can achieve java script expression {}
+   ->in the return function HTML elements contains parent tag 
+   ->JSX will allow empty fragments (<> </>)
+
+components in React:
+-------------------
+      ->components are the smallest UI blocks
+
+
+types:
+-----
+1.class based components:
+     ->components are declared using class keywords is called as a class based components
+     ->in CBC constructors,super keywords, this keywords is present also render(), and life cycle methods are present
+     -> in CBC states are present 
+     ->in CBC stae are present so thats why is called as a stateFull components
+syntax:
+      import {component} from "react";
+      class ClassName extends component{
+         render(){
+            return(
+               html code
+            )
+      }
+      }
+      export default ClassName;
+
+
+2.function based components:
+  ->we can declare FBC using arrow function or normal function or functional expression
+  ->in FBC constructors,superkeywords , this keyword not present 
+  ->render () and life cycle methods are not present
+  ->in FBC state are not present so thats why is called as stateless components
+
+  syntax:
+       const componentName=()=>{
+         return(
+            html code here..
+
+         )
+       }
+       export default ComponentName;
+
+
+   syntax2:
+   function ComponentName(){
+      return(
+         html code here...
+
+      )
+   }
+   export default componentName;
+
+   syntax3:
+         const componentName=function(){
+            return(
+               html code here..
+            )
+         }
+         export default ComponentName;
+
+
+states in React:
+---------------
+    ->states are used to hold the data 
+    ->states are mutuable in nature
+    ->states are present only in CBC
+
+
+    hooks:
+    ------
+      ->hooks are used to make function based components state full 
+      ->hooks are used only FBC
+      ->hooks are introduced in 16.8 react version 
+      ex:
+      1.useState()
+      2.useEffect()
+      3.useMemo()
+      4.useNavigate()
+      5.useContext()
+      6.useReduce()
+      7.useRef()..etc
+
+
+states in FBC:
+--------------
+->we can declare state in FBC  using useState() hooks
+
+
+props(properties):
+-------------------
+   ->props are used to transfer data from one component to another component
+   ->props are immutable in nature 
+   ->props are present both in CBC and FBC
+   
